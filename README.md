@@ -33,5 +33,8 @@ Podemos utilizar o atributo value das tags HTML para inserir dados PHP.
 Os inputs de checkbox podem conter mais de um valor, para poder receber todos os valores no backend, precisamos adicionar uma sintaxe de array no name;
 ``` <input type="checkbox" name="caracteristicas[]"> ```
 
-## Upload de arquivos
+## Upload de arquivos:
 Para enviar arquivos para o servidor precisamos mudar o tipo de envio na tag do formulário HTML para o ``` multipart/form-data ``` e o usar o input do tipo ``` file ```. Depois do envio, todos os dados da imagem estarão em ``` $_FILES ```
+
+## Validações de formulários:
+A validação é muito importante para verificar se os dados recebidos são os esperados, evitar injeção de código malicioso e verficar se não está enviando algum dado vazio onde deveria ser obrigatório
