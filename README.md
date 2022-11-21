@@ -38,3 +38,13 @@ Para enviar arquivos para o servidor precisamos mudar o tipo de envio na tag do 
 
 ## Validações de formulários:
 A validação é muito importante para verificar se os dados recebidos são os esperados, evitar injeção de código malicioso e verficar se não está enviando algum dado vazio onde deveria ser obrigatório
+
+## Mantedo o estado
+O HTTP é um protocolo que não mantém o estado (stateless), ou seja, após o fim da requisição a ``` conexão entre o servidor e cliente é finalizada ```, a próxima conexão não possui mais relação entre ambos. <br>
+Para conseguir manter estes dados podemos utilizar os ``` cookies ```; <br>
+O problema desta abordagem é que alguns navegadores não permitem o uso de cookies ou o bloqueiam. <br>
+O cookies são strings que contém informações: <br>
+A função para adicionar um cookie é ``` setcookie ```; <br>
+A função deve ser chamada antes do corpo da págin, pois envia dados como ``` header ```(cabeçalho); <br>
+O cookie leva dados como : nome, valor e data de expiração(opcional); <br>
+Podemos acessar os cookies de volta com $_COOKIE;
