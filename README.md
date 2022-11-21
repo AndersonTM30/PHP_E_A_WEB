@@ -15,7 +15,7 @@ $_COOKIE => Valores de cookies.<br>
 $_SERVER => Informações sobre o servidor.<br>
 $_FILES => Informações sobre os arquivos que vieram por upload.<br>
 
-### Explorando o Server:
+## Explorando o Server:
 SERVER_SOFTWARE => Identifica o servidor.<br>
 SERVER_NAME => Hostname, DNS ou IP do servidor.<br>
 SERVER_PROTOCOL => Protocolo do servidor.<br>
@@ -28,3 +28,7 @@ $_SERVER['REQUEST_METHOD'] => Podemos validar o tipo de requisição para fazer 
 ## Preechendo campos do formulário com php:
 Podemos utilizar o atributo value das tags HTML para inserir dados PHP.
 ``` <input type="text" value="<?php echo $nome; ?>"> ```
+
+## Parâmetro com mais de um valor:
+Os inputs de checkbox podem conter mais de um valor, para poder receber todos os valores no backend, precisamos adicionar uma sintaxe de array no name;
+``` <input type="checkbox" name="caracteristicas[]"> ```
