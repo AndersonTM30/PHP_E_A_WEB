@@ -1,3 +1,11 @@
+# PHP e ao Web
+Alguns conceitos básicos sobre a implementação de PHP puro no HTML.
+
+## Como utilizar:
+Fazer o clone da aplicação. <br>
+Executar o comando ``` php -S localhost:8000 ``` dentro da pasta do projeto. <br>
+Para acessar cada módulo precisa digitar o caminho do módulo na url, exemplo: ``` localhost:8000/1_server ```
+
 ## Métodos HTTP:
 
 GET => Faz requisições para trazer informações do servidor.<br>
