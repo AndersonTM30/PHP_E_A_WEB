@@ -24,3 +24,7 @@ QUERY_STRING => Argumentos passados na URL após o ?.<br>
 
 ## Autoprocessamento de páginas:
 $_SERVER['REQUEST_METHOD'] => Podemos validar o tipo de requisição para fazer validações e deixar o processo de requisições mais automatizado.
+
+## Preechendo campos do formulário com php:
+Podemos utilizar o atributo value das tags HTML para inserir dados PHP.
+``` <input type="text" value="<?php echo $nome; ?>"> ```
