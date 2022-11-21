@@ -48,3 +48,12 @@ A função para adicionar um cookie é ``` setcookie ```; <br>
 A função deve ser chamada antes do corpo da págin, pois envia dados como ``` header ```(cabeçalho); <br>
 O cookie leva dados como : nome, valor e data de expiração(opcional); <br>
 Podemos acessar os cookies de volta com $_COOKIE;
+
+## Sobre as sessions
+Com ``` session ``` podemos criar uma variável que persiste em diferentes páginas e também perdura por várias visitas ao mesmo site; <br>
+A session ``` utiliza recursos de cookies ``` para  seu funcionamento, e se o recurso estiver desabilitado propaga a sessão via URL; <br>
+Sessions são utilizadas para: autenticação, carrinho de compras e tudo o que precisa persistir de página em página: <br>
+Acaba sendo recurso mais utilizado, comparando com o cookie; <br>
+As ``` sessions são salvas em arquivos ``` no computador que estamos ou no servidor da aplicação; <br>
+O caminho para onde os arquvios são salvos fica em php.ini na configuração ``` session.save_path ```; <br>
+as sessions podem ser salvas em dois formatos: o próprio do PHP e também o Web Distributed Data eXchange (WDDX).
